@@ -8,7 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form>
+	<form onsubmit="return handleSubmit()">
         <label for="name" >Name :</label>
         <input type="text" id="name" placeholder="Name" >
         <br>
@@ -31,6 +31,13 @@
         </select>
         <br>
         <button type="submit" id="submit">Submit</button>
+		<script>
+		function handleSubmit() {
+  alert('Form submitted');
+  return false; // This prevents the form from being submitted
+}
+</script>
+
     </form>
 
 
